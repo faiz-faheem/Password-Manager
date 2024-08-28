@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import Axios from "axios";
+import PasswordStrength from "./PasswordStrength";
 
 function App() {
   const [password, setPassword] = useState("");
@@ -17,7 +18,10 @@ function App() {
     Axios.post("http://localhost:3001/addpassword", {
       password: password,
       title: title,
-    });
+    }).then(() => {
+      setPassword("");
+      setTitle(""); // Clear title field after adding
+    });;
   };
 
   const decryptPassword = (encryption) => {
@@ -45,22 +49,14 @@ function App() {
       <div className="AddingPassword">
         <input
           type="text"
-          placeholder="Ex. password123"
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="Ex. Facebook"
+          placeholder="Website"
+          value={title}
           onChange={(event) => {
             setTitle(event.target.value);
           }}
         />
+        <PasswordStrength password={password} setPassword={setPassword} />
         <button onClick={addPassword}> Add Password</button>
-        <div>
-          <h6>Password</h6>
-        </div>
       </div>
 
       <div className="Passwords">
