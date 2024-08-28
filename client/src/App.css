@@ -28,8 +28,16 @@ input {
   font-size: 17px;
 }
 
+input:hover {
+  background-color: lightgray;
+}
+
 button {
   cursor: pointer;
+}
+button:hover {
+  background-color: #061233;
+  color: white;
 }
 
 .Passwords {
@@ -53,6 +61,53 @@ button {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+
+/*Password strength*/
+.strength-container {
+ width: 250px;
+  min-height: 50px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position:fixed;
+  top: 19%;
+  left: 62%;
+  border:  thin solid #040f4e;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.strength-container .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+  line-height: 20px;
+}
+
+.strength-text {
+  font-size: 13px;
+  display: inline-block;
+  /*margin-left: 5px;*/
+}
+
+.strength-bar-wrapper {
+  width: 100%;
+  height: 4px;
+  background-color: #e9e9e9;
+  border-radius: 3px;
+}
+
+.strength-description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+  line-height: 18px;
+}
+
+i {
+  font-style: normal;
+  color: red;
+  font-weight: bold;
 }
 
 /*
