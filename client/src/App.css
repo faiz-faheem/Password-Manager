@@ -1,8 +1,16 @@
 .App {
-  display: flex;
+  display: grid;
+  place-items: center; /* centers both horizontally and vertically */
+  grid-template-rows: auto 1fr; /* Prevents vertical centering */
+  margin: 0 auto;
+
+  width: 100vh;
+  padding: 20px;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-items: center;*/
+  z-index: 1;
 }
 
 .AddingPassword {
@@ -40,6 +48,41 @@ button:hover {
   color: white;
 }
 
+.copy-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Position relative to the .password element */
+  right: 3%; /* Align to the right edge */
+  bottom: 23%; /* Align to the bottom edge */
+  border-radius: 5px;
+  width: 40px; /* Adjust size */
+  height: 40px;
+  background-color: transparent;
+}
+
+.btn-ignore {
+  background-color: transparent;
+  border: none;
+  width: 50px; /* Adjust size */
+  height: 40px;
+  border-radius: 5px;
+  position: absolute; /* Change to relative, fixed, or sticky as needed */
+  top: 20px; /* Adjust vertical position */
+  right: 20px;
+}
+
+.btn-ignore:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.open-modal-btn {
+  z-index: 999;
+}
+
 .Passwords {
   width: 100%;
   display: flex;
@@ -61,18 +104,19 @@ button:hover {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+  position: relative;
 }
 
 /*Password strength*/
 .strength-container {
- width: 250px;
+  width: 250px;
   min-height: 50px;
   padding: 15px 15px;
   border-radius: 5px;
-  position:fixed;
+  position: fixed;
   top: 19%;
   left: 62%;
-  border:  thin solid #040f4e;
+  border: thin solid #040f4e;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
@@ -110,39 +154,128 @@ i {
   font-weight: bold;
 }
 
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*Password Generator*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: rgb(114, 153, 167);
+  /*align-items: center;
+  justify-content: center;*/
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 20px 20px 70px 70px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 350px;
+  border-radius: 5px;
+
+  text-align: center;
+
+  position: fixed;
+  /* Removed right and bottom properties */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the element */
+  z-index: 2;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.result-container {
+  background-color: rgba(226, 218, 218, 0.4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding: 5px 10px;
+  height: 40px;
+  width: 90%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 30px;
+  width: 370px;
+  border-radius: 5px;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  padding-top: 2px;
+  position: absolute;
+  top: 9.8px;
+  right: 5px;
+  height: 28px;
+  width: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 4px; /* Adjust size */
+  height: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-large {
+  display: block;
+  width: 100%;
+
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 4px; /* Adjust size */
+  height: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.setting {
+  font-size: large;
+  text-align: left;
+  display: flex; /* Add display: flex for horizontal arrangement */
+  align-items: center; /* Center vertically */
 }
-*/
+
+.setting label {
+  flex-basis: 50%; /* Equal width for labels and checkboxes */
+}
+
+.pl {
+  width: auto;
+}
+
+.setting input[type="checkbox"] {
+  transform: scale(0.7);
+}
+
+input[type="checkbox"] {
+  margin-right: -3.1375px;
+}
+
+.clipboard {
+  width: "10px";
+  height: "10px";
+  margin-left: "5px";
+}
+
+img {
+  width: 64%;
+  height: auto;
+  object-fit: cover;
+}

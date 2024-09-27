@@ -47,11 +47,15 @@ app.get("/showpasswords", (req, res) => {
 });
 
 app.post("/decryptpassword", (req, res) => {
-  res.send(decrypt(req.body));
+  try {
+    const decryptedPassword = decrypt(req.body);
+    res.json(decryptedPassword); // Send the decrypted password
+  } catch (error) {
+    console.error("Decryption error:", error);
+    res.status(500).send("Decryption failed");
+  }
 });
 
 app.listen(PORT, () => {
   console.log("Server is running");
 });
-
-
