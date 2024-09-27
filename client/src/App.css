@@ -1,28 +1,54 @@
 .App {
   display: grid;
-  place-items: center; /* centers both horizontally and vertically */
-  grid-template-rows: auto 1fr; /* Prevents vertical centering */
+  place-items: center;
+  grid-template-rows: auto 1fr;
   margin: 0 auto;
-
   width: 100vh;
   padding: 20px;
-  /* display: flex;
-  flex-direction: column;
-   justify-content: center;
-   align-items: center;*/
   z-index: 1;
 }
 
-.AddingPassword {
+.btn-main {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 10px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.btn-primary {
+  background-color: rgb(114, 153, 167);
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: lightblue;
-  width: 60%;
-  height: 300px;
-  border-radius: 20px;
-  margin-top: 20px;
+  padding: 20px;
+  width: 350px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.AddingPassword {
+  background-color: rgb(114, 153, 167);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px 22px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: fixed;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .AddingPassword button,
@@ -34,6 +60,51 @@ input {
   margin: 10px;
   padding-left: 15px;
   font-size: 17px;
+}
+
+.edit-holder {
+  width: 180px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 14px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.edit-btn {
+  margin-right: 5px;
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-title {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
 }
 
 input:hover {
@@ -55,32 +126,69 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute; /* Position relative to the .password element */
-  right: 3%; /* Align to the right edge */
-  bottom: 23%; /* Align to the bottom edge */
+  position: absolute;
+  right: -10%;
+  bottom: 80%;
   border-radius: 5px;
-  width: 40px; /* Adjust size */
-  height: 40px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.delete-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -159%;
+  bottom: 80%;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.edit-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -103%;
+  bottom: 80%; 
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
 }
 
 .btn-ignore {
   background-color: transparent;
   border: none;
-  width: 50px; /* Adjust size */
+  width: 50px; 
   height: 40px;
   border-radius: 5px;
-  position: absolute; /* Change to relative, fixed, or sticky as needed */
-  top: 20px; /* Adjust vertical position */
+  position: absolute;
+  top: 20px;
   right: 20px;
 }
 
 .btn-ignore:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 
 .open-modal-btn {
   z-index: 999;
+}
+
+.main-display {
+  display: flex;
+  align-items: center;
 }
 
 .Passwords {
@@ -92,16 +200,32 @@ button:hover {
 }
 
 .password {
-  width: 400px;
-  height: 70px;
+  width: 290px;
+  height: 30px;
   background-color: black;
-  border-radius: 7px;
+  border-radius: 0 5px 5px 0;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  font-size: 20px;
+  margin: 3px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.website {
+  width: 110px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px 0 0 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   position: relative;
@@ -114,8 +238,8 @@ button:hover {
   padding: 15px 15px;
   border-radius: 5px;
   position: fixed;
-  top: 19%;
-  left: 62%;
+  top: 39%;
+  left: 100%;
   border: thin solid #040f4e;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -131,7 +255,6 @@ button:hover {
 .strength-text {
   font-size: 13px;
   display: inline-block;
-  /*margin-left: 5px;*/
 }
 
 .strength-bar-wrapper {
@@ -155,32 +278,33 @@ i {
 }
 
 /*Password Generator*/
-
 .container {
   background-color: rgb(114, 153, 167);
-  /*align-items: center;
-  justify-content: center;*/
   padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 20px 20px 70px 70px rgba(0, 0, 0, 0.4);
   padding: 20px;
   width: 350px;
-  border-radius: 5px;
-
+  border-radius: 0 0 5px 5px;
+  box-shadow: 60px 25px 30px -40px rgba(0, 0, 0, 0.4),
+    -60px 25px 30px -40px rgba(0, 0, 0, 0.4),
+    0px 30px 30px 0px rgba(0, 0, 0, 0.4);
   text-align: center;
-
   position: fixed;
-  /* Removed right and bottom properties */
-  top: 50%;
+  top: 171%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the element */
-  z-index: 2;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 h2 {
   margin: 10px 0 20px;
   text-align: center;
+  color: #2c3e71;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  width: 240px;
+  margin-left: 15%;
 }
 
 .result-container {
@@ -225,7 +349,7 @@ h2 {
   justify-content: center;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  width: 4px; /* Adjust size */
+  width: 4px;
   height: 4px;
 }
 
@@ -241,20 +365,19 @@ h2 {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  width: 4px; /* Adjust size */
+  width: 4px;
   height: 4px;
 }
 
 .setting {
   font-size: large;
   text-align: left;
-  display: flex; /* Add display: flex for horizontal arrangement */
-  align-items: center; /* Center vertically */
+  display: flex;
+  align-items: center;
 }
 
 .setting label {
-  flex-basis: 50%; /* Equal width for labels and checkboxes */
-}
+  flex-basis: 50%;}
 
 .pl {
   width: auto;
@@ -278,4 +401,30 @@ img {
   width: 64%;
   height: auto;
   object-fit: cover;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content button {
+  margin: 10px 0;
+  padding: 10px;
 }
