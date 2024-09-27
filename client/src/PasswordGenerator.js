@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import clipboardIcon from "./assets/copy.png";
 
-const PasswordGenerator = ({ isOpen, onClose }) => {
+const PasswordGenerator = ({ onPasswordGenerated }) => {
   const [password, setPassword] = useState("");
   const [length, setLength] = useState(12);
   const [includeUpper, setIncludeUpper] = useState(true);
@@ -10,16 +10,14 @@ const PasswordGenerator = ({ isOpen, onClose }) => {
   const [includeNumbers, setIncludeNumbers] = useState(true);
   const [includeSymbols, setIncludeSymbols] = useState(true);
 
-  // Function to copy the password to the clipboard and close the window
   const copyToClipboard = () => {
     if (!password) {
       alert("Password field is empty! Please generate a password first.");
-      return; // Exit the function if the password is empty
+      return;
     }
 
     navigator.clipboard.writeText(password).then(() => {
       alert("Password copied to clipboard!");
-      onClose(); // Close the window or modal
     });
   };
 
@@ -30,7 +28,6 @@ const PasswordGenerator = ({ isOpen, onClose }) => {
     symbol: getRandomSymbol,
   };
 
-  // Password generation function
   const generatePassword = () => {
     let generatedPassword = "";
     const typesCount =
@@ -52,9 +49,12 @@ const PasswordGenerator = ({ isOpen, onClose }) => {
     }
 
     setPassword(generatedPassword.slice(0, length));
+
+    if (onPasswordGenerated) {
+      onPasswordGenerated(generatedPassword);
+    }
   };
 
-  // Random character generators
   function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
   }
@@ -71,9 +71,6 @@ const PasswordGenerator = ({ isOpen, onClose }) => {
     const symbols = "!@#$%^&*(){}[]=<>/,.";
     return symbols[Math.floor(Math.random() * symbols.length)];
   }
-
-  // Don't render anything if the component is not open
-  if (!isOpen) return null;
 
   return (
     <div className="container">
@@ -138,11 +135,7 @@ const PasswordGenerator = ({ isOpen, onClose }) => {
         </div>
       </div>
 
-      <button
-        /*<button className="btn btn-large" onClick={generatePassword}>
-        Generate password
-      </button> this should be here*/ className="btn-large"
-        onClick={generatePassword}>
+      <button className="btn-large" onClick={generatePassword}>
         Generate password
       </button>
     </div>
