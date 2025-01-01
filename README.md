@@ -25,12 +25,12 @@ SignUp and Login Page: Integrated with Firebase for user authentication, featuri
 2. Home Page:
    1. Features a popup for adding new usernames and passwords.
    2. Displays website names in a list on the left side for easy navigation.
-   <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="350"/>
+   <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
        
-   4. On the right, it displays the usernames associated with the corresponding websites. Clicking on a username reveals the decrypted password.
-     <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="350"/>
+   3. On the right, it displays the usernames associated with the corresponding websites. Clicking on a username reveals the decrypted password.
+     <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="500" height="350"/>
      
-   5. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
-     <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="350"/>
+   4. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
+     <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
 
 
