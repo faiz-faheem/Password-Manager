@@ -24,11 +24,11 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
 </div>
 </br>
 <b>Home Page:</b>
+</br>
    1. Features a popup for adding new usernames and passwords.
-   2. Displays website names in a list on the left side for easy navigation.
-   
    </br>
-   
+   2. Displays website names in a list on the left side for easy navigation.
+   </br>
 <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
 </br>       
    
