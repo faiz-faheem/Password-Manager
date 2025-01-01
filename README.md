@@ -26,16 +26,24 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
 <b>Home Page:</b>
    1. Features a popup for adding new usernames and passwords.
    2. Displays website names in a list on the left side for easy navigation.
+   
    </br>
+   
 <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
 </br>       
+   
    3. On the right, it displays the usernames associated with the corresponding websites. Clicking on a username reveals the decrypted password.
    </br>
-     <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="500" height="350"/>
-     </br>
+   
+   <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="500" height="350"/>
+   
+   </br>
+   
    4. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
-     </br>
-     <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
+
+</br>
+     
+   <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
 </br>
 
 <b>Add Credentials Popup:</b>
@@ -44,17 +52,27 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
 </br>
 <img src="https://github.com/user-attachments/assets/d2e2c3cb-615e-48af-bacc-37d779c284f3" alt="description" width="500" height="350"/>
 </br>
+
 2. Analyzes passwords and rates them from 'Too Weak' to 'Strong' based on complexity.
+
 </br>
+
 <img src="https://github.com/user-attachments/assets/5afce7e4-68e2-4028-a2e5-82ba9b15c0b8" alt="description" width="500" height="350"/>
+
 </br>
+
 3. Includes a random password generator with customizable filters, allowing users to specify password length and choose whether to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
+
 </br>
+
 <img src="https://github.com/user-attachments/assets/f2ae49bf-1fbf-4f08-b6cf-6577a716a5b4" alt="description" width="500" height="350"/>
 </br>
 
+
+
 <b>Backend:</b>
 Stores encrypted passwords securely in the database
+
 </br>
 ![image](https://github.com/user-attachments/assets/5b2b4d44-869a-4991-a5d5-d28f523cbe32)
 
