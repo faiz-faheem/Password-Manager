@@ -31,7 +31,7 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
    </br>
 <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
 </br>       
-
+</br>
    
    3. On the right, it displays the usernames associated with the corresponding websites. Clicking on a username reveals the decrypted password.
    <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="500" height="350"/>
