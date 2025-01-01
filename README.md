@@ -22,7 +22,8 @@ SignUp and Login Page: Integrated with Firebase for user authentication, featuri
  <img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
 </div>
 
-2. Home Page:
+
+Home Page:
    1. Features a popup for adding new usernames and passwords.
    2. Displays website names in a list on the left side for easy navigation.
    <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
@@ -33,4 +34,13 @@ SignUp and Login Page: Integrated with Firebase for user authentication, featuri
    4. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
      <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
 
+
+Add Credentials Popup:
+
+1. Provides input fields to add the website name, username, and password.
+<img src="https://github.com/user-attachments/assets/d2e2c3cb-615e-48af-bacc-37d779c284f3" alt="description" width="500" height="350"/>
+2. Analyzes passwords and rates them from 'Too Weak' to 'Strong' based on complexity.
+<img src="https://github.com/user-attachments/assets/5afce7e4-68e2-4028-a2e5-82ba9b15c0b8" alt="description" width="500" height="350"/>
+3. Includes a random password generator with customizable filters, allowing users to specify password length and choose whether to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
+<img src="https://github.com/user-attachments/assets/f2ae49bf-1fbf-4f08-b6cf-6577a716a5b4" alt="description" width="500" height="350"/>
 
