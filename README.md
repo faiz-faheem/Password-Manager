@@ -2,24 +2,23 @@ Docker Repository
 1. Client:   docker pull faizfaheem/pw-manage:client2.0
 2. Server:   docker pull faizfaheem/pw-manage:server2.0
 
-How to setup through docker?
-1. Download docker Images using above pull commands
-2. Run container
-3. Create table in MySQL Workbench
+How to Set Up with Docker:
+1. Pull the Docker images using the provided commands.
+2. Run the container.
+3. Use MySQL Workbench to create the required table.
 
-How to setup through GitHub?
-1. Clone Code
-2. "npm i install" in client folder and server folder
-3. Create table in MySQL Workbench
-4. Run "npm start" in both client and server directory to run on localhost 
+How to Set Up Through GitHub:
+1. Clone the repository.
+2. Run npm install in both the client and server folders.
+3. Create the required table in MySQL Workbench.
+4. Start the application by running npm start in both the client and server directories to launch it on localhost.
 
-RESULTS
-
+<b>RESULTS</b>
 SignUp and Login Page: Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
 
 <div style="display: flex; justify-content: space-around;">
 <img src="https://github.com/user-attachments/assets/1aaddc9e-e3d9-48e6-89c2-4aa69500c4aa" alt="description" width="350"/>
- <img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
+<img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
 </div>
 
 
@@ -43,4 +42,9 @@ Add Credentials Popup:
 <img src="https://github.com/user-attachments/assets/5afce7e4-68e2-4028-a2e5-82ba9b15c0b8" alt="description" width="500" height="350"/>
 3. Includes a random password generator with customizable filters, allowing users to specify password length and choose whether to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
 <img src="https://github.com/user-attachments/assets/f2ae49bf-1fbf-4f08-b6cf-6577a716a5b4" alt="description" width="500" height="350"/>
+
+
+Backend:
+Stores encrypted passwords securely in the database
+![image](https://github.com/user-attachments/assets/5b2b4d44-869a-4991-a5d5-d28f523cbe32)
 
