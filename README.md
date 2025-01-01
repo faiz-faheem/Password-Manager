@@ -14,6 +14,6 @@ How to setup through GitHub?
 4. Run "npm start" in both client and server directory to run on localhost 
 
 <div style="display: flex; justify-content: space-around;">
-<img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="300"/>
-<img src="https://github.com/user-attachments/assets/ca22c064-3edb-4adc-b35c-a5e9245b2299" alt="description" width="300"/>
+<img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="310"/>
+ <img src="https://github.com/user-attachments/assets/ca22c064-3edb-4adc-b35c-a5e9245b2299" alt="description" width="300"/>
 </div>
