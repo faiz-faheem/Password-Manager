@@ -13,6 +13,7 @@ How to setup through GitHub?
 3. Create table in MySQL Workbench
 4. Run "npm start" in both client and server directory to run on localhost 
 
+<div style="display: flex; justify-content: space-around;">
 <img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="500"/>
-
-![image](https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d)
+  <img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="500"/>
+</div>
