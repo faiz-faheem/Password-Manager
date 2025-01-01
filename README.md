@@ -14,6 +14,7 @@ How to Set Up Through GitHub:
 4. Start the application by running npm start in both the client and server directories to launch it on localhost.
 
 <b>RESULTS</b>
+
 SignUp and Login Page: Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
 
 <div style="display: flex; justify-content: space-around;">
