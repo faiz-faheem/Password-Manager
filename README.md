@@ -42,11 +42,10 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
    4. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
    <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
 </br>
+</br>
 
 <b>Add Credentials Popup:</b>
-
 1. Provides input fields to add the website name, username, and password.
-</br>
 <img src="https://github.com/user-attachments/assets/d2e2c3cb-615e-48af-bacc-37d779c284f3" alt="description" width="500" height="350"/>
 </br>
 
