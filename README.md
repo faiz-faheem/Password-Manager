@@ -37,11 +37,9 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
    <img src="https://github.com/user-attachments/assets/79a080ea-7fdd-4a17-9133-5b545b0649e9" alt="description" width="500" height="350"/>
    
    </br>
+   </br>
    
    4. On the far right, edit and delete functions are available for modifying or removing usernames or passwords.
-
-</br>
-     
    <img src="https://github.com/user-attachments/assets/6382ce83-82f5-4b6e-83cf-146c4eb9af04" alt="description" width="500" height="350"/>
 </br>
 
