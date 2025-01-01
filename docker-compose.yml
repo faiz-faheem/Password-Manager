@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./client  # Path to the frontend directory
+    ports:
+      - "80:80"  # Expose port 80 for the React app
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./server  # Path to the backend directory
+    ports:
+      - "3001:3001"  # Expose port 3001 for the backend server
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Project@2024
+      - MYSQL_DATABASE=passwordmanager
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Project@2024
+      MYSQL_DATABASE: passwordmanager
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"  # Expose MySQL port
+
+volumes:
+  mysql_data:
