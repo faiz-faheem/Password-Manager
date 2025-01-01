@@ -1,0 +1,487 @@
+.App {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+  margin: 0 auto;
+  width: 100vh;
+  padding: 20px;
+  z-index: 1;
+}
+
+.btn-main {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 10px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.btn-primary {
+  background-color: rgb(114, 153, 167);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  border-radius: 5px;
+  text-align: center;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.AddingPassword {
+  background-color: rgb(114, 153, 167);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px 22px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: fixed;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.close:hover {
+  background-color: rgb(195, 39, 39);
+}
+
+.AddingPassword button,
+input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 10px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.edit-holder {
+  width: 180px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 14px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.edit-btn {
+  margin-right: 5px;
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-title {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+input:hover {
+  background-color: lightgray;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #061233;
+  color: white;
+}
+
+.copy-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -10%;
+  bottom: 80%;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.delete-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -159%;
+  bottom: 80%;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.edit-main {
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -103%;
+  bottom: 80%;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.btn-ignore {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn-ignore:hover {
+  background-color: transparent;
+}
+
+.open-modal-btn {
+  z-index: 999;
+}
+
+.main-display {
+  display: flex;
+  align-items: center;
+}
+
+.Passwords {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.password {
+  width: 290px;
+  height: 30px;
+  background-color: black;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.website {
+  width: 110px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px 0 0 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+/*Password strength*/
+.strength-container {
+  width: 250px;
+  min-height: 50px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: fixed;
+  top: 39%;
+  left: 100%;
+  border: thin solid #040f4e;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.strength-container .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #777;
+  line-height: 20px;
+}
+
+.strength-text {
+  font-size: 13px;
+  display: inline-block;
+}
+
+.strength-bar-wrapper {
+  width: 100%;
+  height: 4px;
+  background-color: #e9e9e9;
+  border-radius: 3px;
+}
+
+.strength-description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+  line-height: 18px;
+}
+
+i {
+  font-style: normal;
+  color: red;
+  font-weight: bold;
+}
+
+/*Password Generator*/
+.container {
+  background-color: rgb(114, 153, 167);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 60px 25px 30px -40px rgba(0, 0, 0, 0.4),
+    -60px 25px 30px -40px rgba(0, 0, 0, 0.4),
+    0px 30px 30px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: fixed;
+  top: 145%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+  color: #2c3e71;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  width: 240px;
+  margin-left: 15%;
+}
+
+.result-container {
+  background-color: rgba(226, 218, 218, 0.4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  padding: 5px 10px;
+  height: 40px;
+  width: 90%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 30px;
+  width: 370px;
+  border-radius: 5px;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  padding-top: 2px;
+  position: absolute;
+  top: 9.8px;
+  right: 5px;
+  height: 28px;
+  width: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 4px;
+  height: 4px;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 3px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 4px;
+  height: 4px;
+}
+
+.setting {
+  font-size: large;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.setting-row {
+  display: flex;
+  justify-content: center;
+}
+
+.setting label {
+  flex-basis: 50%;
+}
+
+.pl {
+  width: auto;
+}
+
+input[type="checkbox"] {
+  transform: scale(0.7);
+}
+
+input[type="checkbox"] {
+}
+
+.clipboard {
+  width: "10px";
+  height: "10px";
+  margin-left: "5px";
+}
+
+img {
+  width: 64%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content button {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/*Login and register*/
+.login {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+  z-index: 1;
+  background-color: #e0e6f8;
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.google {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.login-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e3e4e9;
+  border-radius: 10px;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  padding: 8px;
+  border: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.link-btn:hover {
+  background-color: #061233;
+  color: white;
+}

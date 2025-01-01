@@ -1,0 +1,139 @@
+import React, { useState } from "react";
+import "./App.css";
+import clipboardIcon from "./assets/copy.png";
+
+const PasswordGenerator = ({ onPasswordGenerated }) => {
+  const [password, setPassword] = useState("");
+  const [length, setLength] = useState(12);
+  const [includeUpper, setIncludeUpper] = useState(true);
+  const [includeLower, setIncludeLower] = useState(true);
+  const [includeNumbers, setIncludeNumbers] = useState(true);
+  const [includeSymbols, setIncludeSymbols] = useState(true);
+
+  const copyToClipboard = () => {
+    if (!password) {
+      alert("Password field is empty! Please generate a password first.");
+      return;
+    }
+
+    navigator.clipboard.writeText(password).then(() => {
+      alert("Password copied to clipboard!");
+    });
+  };
+
+  const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol,
+  };
+
+  const generatePassword = () => {
+    let generatedPassword = "";
+    const typesCount =
+      includeLower + includeUpper + includeNumbers + includeSymbols;
+    const typesArr = [
+      { lower: includeLower },
+      { upper: includeUpper },
+      { number: includeNumbers },
+      { symbol: includeSymbols },
+    ].filter((item) => Object.values(item)[0]);
+
+    if (typesCount === 0) return "";
+
+    for (let i = 0; i < length; i += typesCount) {
+      typesArr.forEach((type) => {
+        const funcName = Object.keys(type)[0];
+        generatedPassword += randomFunc[funcName]();
+      });
+    }
+
+    setPassword(generatedPassword.slice(0, length));
+
+    if (onPasswordGenerated) {
+      onPasswordGenerated(generatedPassword);
+    }
+  };
+
+  function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+  }
+
+  function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+  }
+
+  function getRandomNumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+  }
+
+  function getRandomSymbol() {
+    const symbols = "!@#$%^&*(){}[]=<>/,.";
+    return symbols[Math.floor(Math.random() * symbols.length)];
+  }
+
+  return (
+    <div className="container">
+      <div className="result-container">
+        <span id="result">{password}</span>
+        <copy className="btn" onClick={copyToClipboard}>
+          <i className="clipboard">
+            {" "}
+            <img src={clipboardIcon} alt="Copy" />
+          </i>
+        </copy>
+      </div>
+
+      <div className="settings">
+        <div className="setting">
+          <label>Password length</label>
+          <input
+            className="pl"
+            type="number"
+            min="4"
+            max="30"
+            value={length}
+            onChange={(e) => setLength(+e.target.value)}
+          />
+        </div>
+        <div className="setting-row">
+          
+            <label>Uppercase letters</label>
+            <input
+              type="checkbox"
+              checked={includeUpper}
+              onChange={() => setIncludeUpper(!includeUpper)}
+            />
+          
+          
+            <label>Lowercase letters</label>
+            <input
+              type="checkbox"
+              checked={includeLower}
+              onChange={() => setIncludeLower(!includeLower)}
+            />
+        </div>
+        <div className="setting-row">
+            <label>Numbers</label>
+            <input
+              type="checkbox"
+              checked={includeNumbers}
+              onChange={() => setIncludeNumbers(!includeNumbers)}
+            />
+            <label>Symbols</label>
+            <input
+              type="checkbox"
+              checked={includeSymbols}
+              onChange={() => setIncludeSymbols(!includeSymbols)}
+            />
+        </div>
+      </div>
+
+      <button className="btn-large" onClick={generatePassword}>
+        Generate password
+      </button>
+    </div>
+  );
+};
+
+export default PasswordGenerator;
