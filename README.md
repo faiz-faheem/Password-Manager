@@ -1,13 +1,13 @@
-Docker Repository
-1. Client:   docker pull faizfaheem/pw-manage:client2.0
-2. Server:   docker pull faizfaheem/pw-manage:server2.0
+<b>Docker Repository</b>
+Client:   docker pull faizfaheem/pw-manage:client2.0
+Server:   docker pull faizfaheem/pw-manage:server2.0
 
-How to Set Up with Docker:
+<b>How to Set Up with Docker:</b>
 1. Pull the Docker images using the provided commands.
 2. Run the container.
 3. Use MySQL Workbench to create the required table.
 
-How to Set Up Through GitHub:
+<b>How to Set Up Through GitHub:</b>
 1. Clone the repository.
 2. Run npm install in both the client and server folders.
 3. Create the required table in MySQL Workbench.
@@ -19,8 +19,8 @@ SignUp and Login Page:</b>
 </br>
 Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
 <div style="display: flex; justify-content: space-around;">
-<img src="https://github.com/user-attachments/assets/1aaddc9e-e3d9-48e6-89c2-4aa69500c4aa" alt="description" width="350"/>
 <img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
+   <img src="https://github.com/user-attachments/assets/1aaddc9e-e3d9-48e6-89c2-4aa69500c4aa" alt="description" width="350"/>
 </div>
 </br>
 <b>Home Page:</b>
