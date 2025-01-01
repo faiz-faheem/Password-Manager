@@ -18,8 +18,8 @@ RESULTS
 SignUp and Login Page: Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
 
 <div style="display: flex; justify-content: space-around;">
-<img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="350"/>
- <img src="https://github.com/user-attachments/assets/ca22c064-3edb-4adc-b35c-a5e9245b2299" alt="description" width="350"/>
+<img src="https://github.com/user-attachments/assets/1aaddc9e-e3d9-48e6-89c2-4aa69500c4aa" alt="description" width="350"/>
+ <img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
 </div>
 
 2. Home Page:
