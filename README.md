@@ -46,29 +46,21 @@ Integrated with Firebase for user authentication, featuring Google Sign-In for e
 
 <b>Add Credentials Popup:</b>
 1. Provides input fields to add the website name, username, and password.
-<img src="https://github.com/user-attachments/assets/d2e2c3cb-615e-48af-bacc-37d779c284f3" alt="description" width="500" height="350"/>
+<img src="https://github.com/user-attachments/assets/d2e2c3cb-615e-48af-bacc-37d779c284f3" alt="description" width="400" height="500"/>
+</br>
 </br>
 
 2. Analyzes passwords and rates them from 'Too Weak' to 'Strong' based on complexity.
-
+<img src="https://github.com/user-attachments/assets/5afce7e4-68e2-4028-a2e5-82ba9b15c0b8" alt="description" width="400" height="400"/>
 </br>
-
-<img src="https://github.com/user-attachments/assets/5afce7e4-68e2-4028-a2e5-82ba9b15c0b8" alt="description" width="500" height="350"/>
-
 </br>
 
 3. Includes a random password generator with customizable filters, allowing users to specify password length and choose whether to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
-
+<img src="https://github.com/user-attachments/assets/f2ae49bf-1fbf-4f08-b6cf-6577a716a5b4" alt="description" width="400" height="400"/>
 </br>
-
-<img src="https://github.com/user-attachments/assets/f2ae49bf-1fbf-4f08-b6cf-6577a716a5b4" alt="description" width="500" height="350"/>
 </br>
-
-
 
 <b>Backend:</b>
 Stores encrypted passwords securely in the database
-
-</br>
 ![image](https://github.com/user-attachments/assets/5b2b4d44-869a-4991-a5d5-d28f523cbe32)
 
