@@ -1,6 +1,6 @@
 Docker Repository
-Client: docker pull faizfaheem/pw-manage:client2.0
-Server: docker pull faizfaheem/pw-manage:server2.0
+1. Client: docker pull faizfaheem/pw-manage:client2.0
+2. Server: docker pull faizfaheem/pw-manage:server2.0
 
 How to setup through docker?
 1. Download docker Image
@@ -12,5 +12,7 @@ How to setup through GitHub?
 2. "npm i install" in client folder and server folder
 3. Create table in MySQL Workbench
 4. Run "npm start" in both client and server directory to run on localhost 
+
+<img src="https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d" alt="description" width="500"/>
 
 ![image](https://github.com/user-attachments/assets/51ad5b73-7862-4f30-bab3-cc05efd4322d)
