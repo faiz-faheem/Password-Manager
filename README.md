@@ -13,17 +13,16 @@ How to Set Up Through GitHub:
 3. Create the required table in MySQL Workbench.
 4. Start the application by running npm start in both the client and server directories to launch it on localhost.
 
-<b>RESULTS</b>
+<b>RESULTS
 
-SignUp and Login Page: Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
+SignUp and Login Page:</b> Integrated with Firebase for user authentication, featuring Google Sign-In for enhanced functionality.
 
 <div style="display: flex; justify-content: space-around;">
 <img src="https://github.com/user-attachments/assets/1aaddc9e-e3d9-48e6-89c2-4aa69500c4aa" alt="description" width="350"/>
 <img src="https://github.com/user-attachments/assets/423b586d-7f83-4eee-9697-8cf6c8315f04" alt="description" width="350"/>
 </div>
-
-
-Home Page:
+</br>
+<b>Home Page:</b>
    1. Features a popup for adding new usernames and passwords.
    2. Displays website names in a list on the left side for easy navigation.
    <img src="https://github.com/user-attachments/assets/0c8990fe-8436-47c8-bc7d-d711c4d349e0" alt="description" width="500" height="350"/>
